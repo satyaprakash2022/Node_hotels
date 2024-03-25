@@ -1,0 +1,19 @@
+{
+  "name": "practice_node",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "satya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.1",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.2.3",
+    "nodemon": "^3.1.0",
+    "os": "^0.1.2"
+  }
+}
