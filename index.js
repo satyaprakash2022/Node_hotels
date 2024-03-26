@@ -26,6 +26,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json()); // it will stores the entered data from user into req.body
 
 const db = require("./db");
+require('dotenv').config();
 
 // const Person = require("./models/person");
 
@@ -151,4 +152,7 @@ const personRoutes = require('./routes/personRoutes');
 // app.use('/' , personRoutes)
 app.use('/person' , personRoutes)  // here we will use /person so that the personROutes endpoints will be fetched after /person
 
-app.listen(3000);
+const PORT = process.env.PORT || 3000;  // first it will check port from env file if not then it will use 3000 port
+app.listen(PORT , () =>{
+  console.log('listening on port');
+});

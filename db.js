@@ -2,7 +2,10 @@
 const mongoose = require('mongoose')
 
 // step 2 : connect to Mongoose
-const mongoURL = 'mongodb://localhost:27017/practice_node'   // practice_node is the name of database
+require('dotenv').config();
+const mongoURL = process.env.MONGO_URL;
+// const mongoURL = process.env.MONGO_URL_GLOBAL;
+
 
 // step 3 : set up the mongoDB Connection
 mongoose.connect(mongoURL , {

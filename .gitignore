@@ -3,3 +3,5 @@ node_modules/
 
 # To ignore notes.js(This file was only for learning purposes)
 notes.js  
+
+.env
